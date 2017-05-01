@@ -1,5 +1,6 @@
 # Valiant.Altis
 
+Made by Christiansen for AW, any fork of this mission has to pertain credits to me and AW.
 
 ## Requirements:
 * ACE3
