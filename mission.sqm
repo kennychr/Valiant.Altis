@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=1696;
+		nextID=1697;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=441;
+		nextID=466;
 	};
 	class Camera
 	{
-		pos[]={2327.0537,108.3497,22224.424};
-		dir[]={-0.3945322,-0.35709828,-0.84678584};
-		up[]={-0.15084012,0.93403488,-0.32375205};
-		aside[]={-0.90653437,3.3312244e-007,0.42237031};
+		pos[]={2651.0195,27.821257,22221.287};
+		dir[]={-0.83989537,-0.49043009,0.23250967};
+		up[]={-0.47265407,0.87147993,0.1308457};
+		aside[]={0.26679814,-2.1245796e-008,0.96375608};
 	};
 };
 binarizationWanted=0;
@@ -108,7 +108,7 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -122,14 +122,14 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
@@ -157,14 +157,14 @@ class AddonsMetaData
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item8
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
@@ -192,7 +192,7 @@ class AddonsMetaData
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item13
 		{
@@ -297,35 +297,35 @@ class AddonsMetaData
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item28
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item29
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item30
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item31
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item32
 		{
@@ -344,7 +344,7 @@ class AddonsMetaData
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item35
 		{
@@ -379,14 +379,14 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item40
 		{
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item41
 		{
@@ -400,7 +400,7 @@ class AddonsMetaData
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item43
 		{
@@ -455,7 +455,6 @@ class ScenarioData
 	loadScreen="Media\Misc\aw_valiant.paa";
 	saving=0;
 	respawnDialog=0;
-	disabledAI=1;
 	respawn=3;
 	respawnDelay=120.00001;
 	class Header
@@ -7208,7 +7207,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2599.0718,16.84041,22200.816};
+				position[]={2599.0718,18.914213,22200.816};
 				angles[]={0.0016194459,3.0608151,0};
 			};
 			side="Empty";
@@ -7217,14 +7216,14 @@ class Mission
 			};
 			id=1117;
 			type="rhsusf_m1025_w_s_m2";
-			atlOffset=3.8425217;
+			atlOffset=5.9163246;
 		};
 		class Item92
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2605.5029,16.886683,22201.311};
+				position[]={2605.5029,18.88554,22201.311};
 				angles[]={0,3.1566803,0};
 			};
 			side="Empty";
@@ -7233,7 +7232,7 @@ class Mission
 			};
 			id=1118;
 			type="rhsusf_m1025_w_s_m2";
-			atlOffset=3.8888645;
+			atlOffset=5.887722;
 		};
 		class Item93
 		{
@@ -8387,6 +8386,7 @@ class Mission
 						init="(group this) setGroupId [""CMD""]; this setVariable [""description"", ""CMD_member"", true]; this setVariable [""class"", ""leader"", true];this setVariable [""loadout"", ""Pltco"", true];";
 						name="s0_1";
 						description="Platoon Commander";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1240;
@@ -8394,6 +8394,25 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -8412,7 +8431,26 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -8431,7 +8469,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute4
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -8450,7 +8488,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=5;
 					};
 				};
 				class Item1
@@ -8723,7 +8761,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -9570,7 +9608,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -10410,7 +10448,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -12117,7 +12155,6 @@ class Mission
 						init="(group this) setGroupId [""Logi""]; this setVariable [""description"", ""LOGI_member"", true];this setVariable [""class"", ""leader"", true];this setVariable [""loadout"", ""REP_TL"", true];";
 						name="s62_1";
 						description="Logi - Squad Leader";
-						isPlayer=1;
 						isPlayable=1;
 					};
 					id=1317;
@@ -12444,7 +12481,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -13812,12 +13849,13 @@ class Mission
 				angles[]={0,4.0870361,0};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 			};
 			id=1475;
 			type="Land_PortableLight_double_F";
+			atlOffset=4.286377;
 		};
 		class Item243
 		{
@@ -16148,7 +16186,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2619.8628,3.8147166,22205.369};
+				position[]={2619.8628,3.8150406,22205.369};
 				angles[]={0.035988688,1.4690436,6.1166286};
 			};
 			side="Empty";
@@ -16160,7 +16198,7 @@ class Mission
 			};
 			id=1685;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.81667542;
+			atlOffset=0.81699944;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16207,12 +16245,12 @@ class Mission
 		class Item360
 		{
 			dataType="Marker";
-			position[]={2625.3408,2.2526221,22211.088};
+			position[]={2616.6606,1.476593,22224.018};
 			name="VVS_B";
 			type="Empty";
 			angle=82.292999;
 			id=1686;
-			atlOffset=0.38718021;
+			atlOffset=-1.988184;
 		};
 		class Item361
 		{
