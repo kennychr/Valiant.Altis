@@ -1,11 +1,11 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, aw_detroyRadiotower">*/
+/*%FSM<COMPILE "F:\SteamLibrary\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, aw_detroyRadiotower">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"Initialize",0,250,373.430664,-59.082642,463.430664,-9.082642,0.000000,"Initialize"};
 item1[] = {"waitFor__towerPo",4,218,373.809235,7.689400,463.809235,57.689400,0.000000,"waitFor " \n "towerPos"};
 item2[] = {"Spawn_Tower",2,250,373.261017,85.184090,463.261047,135.184097,0.000000,"Spawn Tower"};
 item3[] = {"tower_spawned_",4,218,372.712830,158.640137,462.712830,208.640137,0.000000,"tower" \n "spawned?"};
-item4[] = {"Spawn_Enemies_",2,4346,372.164734,226.614410,462.164764,276.614410,0.000000,"Spawn Enemies" \n ""};
+item4[] = {"Spawn_Enemies_",2,250,372.164734,226.614410,462.164764,276.614410,0.000000,"Spawn Enemies" \n ""};
 item5[] = {"Ready_for_monito",8,218,372.271118,293.598846,462.271118,343.598816,0.000000,"Ready" \n "for" \n "monitoring"};
 item6[] = {"set_timeout",2,250,372.164703,370.785675,462.164703,420.785675,0.000000,"set timeout"};
 item7[] = {"time_to_monitor",4,218,372.159210,460.429443,462.159210,510.429413,0.000000,"time to" \n "monitor?"};
@@ -14,7 +14,7 @@ item9[] = {"no",8,218,495.830841,460.171783,585.830322,510.171783,0.000000,"no"}
 item10[] = {"",7,210,536.931763,570.117371,544.931824,578.117371,0.000000,""};
 item11[] = {"",7,210,536.729736,391.569855,544.729736,399.569855,0.000000,""};
 item12[] = {"Yes",4,218,372.852936,614.954163,462.852936,664.954163,1.000000,"Yes"};
-item13[] = {"End_FSM",1,250,373.988434,684.234070,463.988464,734.234070,0.000000,"End" \n "FSM"};
+item13[] = {"End_FSM",1,4346,373.988434,684.234070,463.988464,734.234070,0.000000,"End" \n "FSM"};
 link0[] = {0,1};
 link1[] = {1,2};
 link2[] = {2,3};
@@ -29,8 +29,8 @@ link10[] = {9,11};
 link11[] = {10,9};
 link12[] = {11,6};
 link13[] = {12,13};
-globals[] = {0.000000,0,0,0,0,640,480,1,15,6316128,1,-135.761536,936.103088,868.286072,-309.628723,1132,1244,1};
-window[] = {2,-1,-1,-1,-1,1055,26,1946,26,3,1150};
+globals[] = {0.000000,0,0,0,0,640,480,1,15,6316128,1,-135.761536,936.103088,1250.824341,72.909515,1132,1244,1};
+window[] = {2,-1,-1,-1,-1,1107,-2482,-562,78,3,1150};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -45,8 +45,6 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"//Find tower pos" \n
                          "_towerPos = nil;" \n
                          "_towerPos = [""land2"", true, 10] call AW_fnc_findSpace;" \n
-                         "" \n
-                         "_unitCfg = AW_UNITS;" \n
                          "" \n
                          "" \n
                          "diag_log [""AW_MISSIONLOGGING--->  aw_destroyRadartower:INIT""];" \n

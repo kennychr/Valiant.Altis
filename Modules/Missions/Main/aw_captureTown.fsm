@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, aw_capTown">*/
+/*%FSM<COMPILE "F:\SteamLibrary\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, aw_capTown">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"Init",0,250,334.626160,-123.057617,424.626160,-73.057625,0.000000,"Init"};
@@ -9,9 +9,9 @@ item4[] = {"spawn_enemies_and",2,250,335.216400,179.017853,425.216431,229.017853
 item5[] = {"_",8,218,335.834595,253.206177,425.834595,303.206177,0.000000,""};
 item6[] = {"set_timeout",2,250,335.216370,348.414551,425.216370,398.414551,0.000000,"set" \n "timeout"};
 item7[] = {"ready_to__check",4,218,334.598145,428.167023,424.598145,478.167023,0.000000,"ready to" \n " check ?"};
-item8[] = {"Enemies_dead__",2,250,333.979889,571.597717,423.979919,621.597717,0.000000,"Enemies" \n "dead ?"};
+item8[] = {"Enemies_dead__",2,4346,333.979889,571.597717,423.979919,621.597717,0.000000,"Enemies" \n "dead ?"};
 item9[] = {"No",8,218,447.117096,428.167023,537.117249,478.167023,0.000000,"No"};
-item10[] = {"yes",4,4314,334.598083,651.350159,424.598083,701.350159,1.000000,"yes"};
+item10[] = {"yes",4,218,334.598083,651.350159,424.598083,701.350159,1.000000,"yes"};
 item11[] = {"",7,210,488.117065,591.361206,496.117065,599.361206,0.000000,""};
 item12[] = {"",7,210,487.498810,369.414551,495.498810,377.414551,0.000000,""};
 item13[] = {"End_Machine",1,250,335.216370,768.196777,425.216400,818.196777,0.000000,"End Machine"};
@@ -29,8 +29,8 @@ link10[] = {9,12};
 link11[] = {10,13};
 link12[] = {11,9};
 link13[] = {12,6};
-globals[] = {0.000000,0,0,0,0,640,480,1,15,6316128,1,-118.826752,942.319153,945.844727,-257.787201,1132,1284,1};
-window[] = {2,-1,-1,-1,-1,1107,-2482,-562,78,3,1150};
+globals[] = {0.000000,0,0,0,0,640,480,1,15,6316128,1,-118.826752,942.319153,945.844727,-257.787201,1132,1244,1};
+window[] = {2,-1,-1,-1,-1,1289,-2300,-380,260,3,1150};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -111,7 +111,7 @@ class FSM
                          "_taskID = [""A town has been occupied. Take it back"",""Capture Town"",""testWords"",_missionLoc,""ATTACK""] call AW_fnc_makeTask;" \n
                          "" \n
                          "" \n
-                         "diag_log [""AW_MISSIONLOGGING--->  aw_captureTown:Calling DAC,making trigger for monitoring count of EI units,making task""]" \n
+                         "diag_log [""AW_MISSIONLOGGING--->  aw_captureTown:Spawning EI,making trigger for monitoring count of EI units,making task""]" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
