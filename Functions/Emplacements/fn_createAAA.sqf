@@ -13,7 +13,6 @@
  *
  * Public: [Yes/No]
  */
-_unitCfg = AW_UNITS;
 
 _pos = _this select 0;
 _safePos = [_pos,0,200,25,0,1,0] call BIS_fnc_findSafePos;

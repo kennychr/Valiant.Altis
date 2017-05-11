@@ -18,7 +18,7 @@ class Header {
 //-------------------------Misc
 
 disableChannels[] = {0,2,4,5,6};								// 0 = Global, 1 = Side, 2 = Command, 3 = Group, 4 = Vehicle, 5 = Direct, 6 = System. Admin/server/BattlEye can still use Global.
-disabledAI = 1;											// No AI in playable units
+disabledAI = 0;											// No AI in playable units
 aiKills = 0; 											// disable scorelist for AI players
 enableItemsDropping = 0; 								// disabled with 0
 joinUnassigned = 1;										// 0 = players forced into role on join
@@ -33,7 +33,7 @@ respawnTemplatesWest[] = {"ace_spectator","Counter","MenuPosition"};
 respawnOnStart = 0;
 //------------------------- Includes
 #include "Scripts\Third-Party\VVS\menu.h"
-#include "Dialog\dialog.hpp"
+#include "Dialog\roster_dialog.hpp"
 
 //------------------------- Configs
 class CfgFunctions
@@ -50,6 +50,8 @@ class CfgTaskEnhancements
    share        = 1;            //0: do not count assigned players (default), 1: count how many players have the task assigned
    propagate    = 1;            //0: do not propagate (default), 1: propagate shared tasks to subordinates
 };
+
+__EXEC (MISSION_ROOT = __FILE__ select [0, count __FILE__ - 15])
 
 class Params
 {

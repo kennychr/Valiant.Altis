@@ -1,6 +1,6 @@
 /*
  * Author: [Pfc.Christiansen]
- * [Inspired by Ryko's roster,simplified by me]
+ * [Inspired by Ryko's roster,simplified by me and added a listbox dialog to make it easier for players with low resouloutions to view]
  *
  * Arguments:
  * 0: Argument Name <TYPE>
@@ -13,16 +13,10 @@
  *
  * Public: [Yes/No]
  */
-
-
+ disableSerialization;
+ _ctrl = (findDisplay 1447) displayCtrl 1337;
  _players = [];
  _list = [];
- _form = "<t align='left' size='1.4'>";
- _form2 = "</t>";
-// {_players pushBack _x} forEach (allPlayers - entities "HeadlessClient_F");
-{_players pushBack _x} forEach (playableUnits - entities "HeadlessClient_F");
- {_return = _form + format ["<br/><t underline='true'>%4::%1</t>: <t color='#ffff66'>%2 %3</t>::<t underline='true'>RADIO'S</t>::SW:<t color='#ffff66'><t underline='true'>%5</t></t>::LR:<t color='#ffff66'><t underline='true'>%6</t></t>  ",roleDescription _x, rank _x, name _x, groupId (group _x),((call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwFrequency),((call TFAR_fnc_ActiveLrRadio) call TFAR_fnc_getLrFrequency)] + _form2;_list pushBack _return} forEach _players;
-_list sort true;
-_listStr =  format ["%1",_list];
-_parsed = parseText _listStr;
-((findDisplay 1799) displayCtrl 1812) ctrlSetStructuredText _parsed;
+ {_players pushBack _x} forEach (playableUnits - entities "HeadlessClient_F");
+ {_return = format [":::%1:::%2:::%3:::%4:::", groupId (group _x),roleDescription _x, rank _x, name _x];_ctrl lbAdd _return} forEach _players;
+ lbSort [_ctrl, "ASC"];
